@@ -1,14 +1,13 @@
-@import url("https://fonts.google.com/specimen/Montserrat");
-@import url("https://fonts.google.com/specimen/Fraunces");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
 
 :root {
-  height: 100%;
+  /* height: 100%; */
 }
 
 body {
   background-color: hsl(30, 38%, 92%);
-  margin: 0;
-  height: 100%;
+  /* margin: 0; */
+  /* height: 100%; */
 }
 
 .container {
@@ -16,13 +15,15 @@ body {
   border-radius: 10px;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  width: 340px;
-  height: 600px;
+  width: 350px;
+  height: 620px;
+  margin-top: 15px;
+  margin-left: 3px;
 }
 
 .container-img {
   height: auto;
-  width: 340px;
+  width: 350px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 0px;
   border-top-right-radius: 10px;
@@ -34,32 +35,32 @@ body {
 }
 
 .container-product {
-  font-family: Fraunces;
-  padding: 15px;
+  font-family: Montserrat;
+  font-weight: 100;
+  padding: 20px;
 }
 
 .container-product h2 {
-  font-size: 0.95em;
-  font-weight: 400;
+  font-size: 0.8em;
   color: hsl(228, 12%, 48%);
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 
 .container-product h1 {
-  font-size: 2.3em;
+  font-size: 1.9em;
+  font-family: Fraunces;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .container-product p {
-  font-size: 0.98em;
+  font-size: 0.8em;
   font-weight: 400;
   color: hsl(228, 12%, 48%);
   line-height: 1.5;
   letter-spacing: 1px;
-  /* margin-top: 0; */
 }
 
 .container-pricing {
@@ -71,16 +72,18 @@ body {
 .container-pricing h3 {
   font-size: 2.25em;
   color: hsl(158, 36%, 37%);
+  font-family: Fraunces;
   font-weight: 700;
   margin: 10px;
 }
 
 .container-pricing h4 {
-  font-size: 0.95em;
+  font-size: 0.85em;
   font-weight: 400;
   color: hsl(228, 12%, 48%);
   text-decoration-line: line-through;
   padding-left: 12px;
+  padding-top: 6px;
 }
 
 .button .buttoninfo {
@@ -113,17 +116,28 @@ body {
   font-weight: 500;
 }
 
+footer {
+  margin-top: 10px;
+}
+
 @media screen and (min-width: 770px) {
+  body {
+    height: 200px;
+  }
+
   .container {
     grid-template-rows: 0;
     grid-template-columns: repeat(2, 1fr);
     width: 600px;
-    height: 450px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
   }
 
   .container-img {
     width: 300px;
-    height: 450px;
+    height: 400px;
     background-image: url("images/image-product-desktop.jpg");
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -135,8 +149,9 @@ body {
   }
 
   .button {
-    width: 270px;
+    width: 264px;
     padding-left: 60px;
     padding-right: 60px;
+    margin-top: 15px;
   }
 }
